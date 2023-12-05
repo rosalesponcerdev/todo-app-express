@@ -32,6 +32,6 @@ Este proyecto incluye un archivo docker-compose.yml para facilitar la configurac
 
 2.  **Detener los Contenedores:**
     ```bash
-    docker-compose down
+    docker-compose down --rmi all --volumes
     ```
 
