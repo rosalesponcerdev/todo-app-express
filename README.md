@@ -26,7 +26,7 @@ Este proyecto incluye un archivo docker-compose.yml para facilitar la configurac
     Este proyecto incluye un archivo docker-compose.yml para facilitar la configuración de MongoDB en un contenedor.
 
     ```bash
-    docker-compose up -d
+    docker-compose up -d --build
     ```
     Esto iniciará el servidor Node.js en http://localhost:3000 y MongoDB en el  contenedor.
 
@@ -34,4 +34,3 @@ Este proyecto incluye un archivo docker-compose.yml para facilitar la configurac
     ```bash
     docker-compose down --rmi all --volumes
     ```
-
