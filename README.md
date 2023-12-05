@@ -8,6 +8,8 @@ Este es un proyecto de ejemplo que utiliza Node.js y Express para construir un s
 -   [Docker Compose](https://docs.docker.com/compose/install/)
 -   Node.js y npm
 
+Repositorio: https://github.com/rosalesponcerdev/todo-app-express
+
 ## Instrucciones de configuración
 
 1. **Instalar Dependencias:**
