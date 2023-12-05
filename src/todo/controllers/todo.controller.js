@@ -2,9 +2,9 @@ import Todo from '../models/todo.model.js';
 
 export const saveTodo = async (req, res) => {
 	try {
-		const { title } = req.body;
+		const { title, color = '#ffffff' } = req.body;
 
-		const newTodo = new Todo({ title });
+		const newTodo = new Todo({ title, color });
 
 		const savedTodo = await newTodo.save();
 
@@ -26,7 +26,7 @@ export const getTodos = async (req, res) => {
 
 export const updateTodos = async (req, res) => {
 	try {
-		const { _id, completed, description, title, date } = req.body;
+		const { _id, completed, description, title, date, color } = req.body;
 
 		const newTodo = {};
 
@@ -34,6 +34,7 @@ export const updateTodos = async (req, res) => {
 		if (description) newTodo.description = description;
 		if (title) newTodo.title = title;
 		if (date) newTodo.date = date;
+		if (color) newTodo.color = color;
 
 		const result = await Todo.findOneAndUpdate({ _id }, newTodo).exec();
 

@@ -16,6 +16,10 @@ const schema = new Schema(
 		description: {
 			type: String,
 			trim: true
+		},
+		color: {
+			type: String,
+			trim: true
 		}
 	},
 	{
